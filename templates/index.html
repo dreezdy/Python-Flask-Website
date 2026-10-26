@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+</head>
+<body>
+    <h1>Welcome to My Flask Website!</h1>
+    <div class="home-actions">
+    <a href="{{ url_for('ai_chat') }}" class="action-button">
+      🤖 Open AI Learning Assistant
+    </a>
+
+    <a href="{{ url_for('assignments') }}" class="action-button">
+      📚 Manage Assignments
+    </a>
+  </div>
+    <p>I am Learning how to build web applications with python and Flask</p>
+    <h2>What I am Learning:</h2>
+    <ul>
+        <li>Python</li>
+        <li>Flask</li>
+        <li>HTML</li>
+        <li>Web development</li>
+    </ul>
+
+    <a href="/assignments" class="url_btn">Go to Assignments</a>
+    <a href="/chat" class="ai_url_btn">Go to Chatbot</a>
+</body>
+</html>
